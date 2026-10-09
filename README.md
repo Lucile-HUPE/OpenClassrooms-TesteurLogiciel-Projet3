@@ -12,6 +12,6 @@
 - .popular-cards .card-title {margin-bottom: 4px;} à 5px pour correspondre à la maquette
 
 Questions :
-- Balise '<i>' utilisée pour afficher les étoiles sur la page. Pourquoi ?
+- Balise "i" utilisée pour afficher les étoiles sur la page. Pourquoi ?
 - Comment sont obtenu les valeurs en % pour les largeurs des zones hébergements & populaires ?
 - box-sizing: border-box comment ça marche ?

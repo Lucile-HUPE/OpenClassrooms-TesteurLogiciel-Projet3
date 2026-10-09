@@ -21,6 +21,10 @@ body {
     margin-top: 0;
 }
 
+section {
+    margin: 35px 0;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -80,6 +84,128 @@ nav {
     border-top-width: 2px;
     border-top-color: var(--main-color);
     padding-top: 14px;
+}
+
+/****** search section ***********/
+fieldset {
+    display: flex;
+    border-style: none;
+    padding: 0;
+    width: fit-content;
+}
+
+:focus {
+    outline: none;
+}
+
+.search-infos {
+    margin-top: 30px;
+}
+
+.search-subtitle {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.search-infos form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.search-bar {
+    display: flex;
+    border-style: solid;
+    border-color: var(--filter-border-color);
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+.search-icon {
+    display: flex;
+    background-color: var(--main-bg-color);
+    width: 49px;
+    height: 50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar .fa-solid {
+    color: #000000;
+}
+
+.search-bar input {
+    border-style: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#search-text {
+    padding: 0 24px;
+}
+
+.search-button {
+    color: white;
+    background-color: var(--main-color);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 0 16px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filters h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--filter-border-color);
+    border-radius: 25px;
+    border-width: 2px;
+    padding: 15px 19px;
+    gap: 10px;
+}
+
+.filter:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.filter p {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.info-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--filter-border-color);
+    border-radius: 25px;
+    border-width: 1px;
+    width: 24px;
+    height: 24px;
+}
+
+.info-text p {
+    margin: 0;
 }
 
 /****** accommodations & popular ***********/

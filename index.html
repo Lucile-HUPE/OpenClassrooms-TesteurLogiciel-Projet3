@@ -21,6 +21,7 @@
         <header>
             <img class="logo" src="./images/logo/Booki.png" alt="Logo Booki">
             <nav>
+                <!-- TODO : div change to li -->
                 <div class="nav-button">
                     <a href="#accommodations">Hébergements</a>
                 </div>
@@ -30,6 +31,46 @@
             </nav>
         </header>
         <main>
+            <section class="search-infos">
+                <form method="get" action="">
+                    <div>
+                        <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <p class="search-subtitle">En plein centre-ville ou en pleine nature</p>
+                    </div>
+                    <fieldset class="search-bar">
+                        <div class="search-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <input type="text" name="search-text" id="search-text" placeholder="Marseille, France" value="Marseille, France" minlength="1">
+                        <input class="search-button" type="submit" value="Rechercher">
+                    </fieldset>
+                    <fieldset class="filters">
+                        <h2>Filtres</h2>
+                        <div class="filter">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <p>Économique</p>
+                        </div>
+                        <div class="filter">
+                            <i class="fa-solid fa-person"></i>
+                            <p>Familial</p>
+                        </div>
+                        <div class="filter">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>Romantique</p>
+                        </div>
+                        <div class="filter">
+                            <i class="fa-solid fa-fire"></i>
+                            <p>Nos pépites</p>
+                        </div>
+                    </fieldset>
+                    <div class="info-text">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-info"></i>
+                        </div>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+                </form>
+            </section>
             <div class="accommodations-and-popular">
                 <section id="accommodations" class="accommodations">
 
