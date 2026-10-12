@@ -10,3 +10,5 @@
 - Réorganisation de l'ordre des propriétés css pour mieux s'y retrouver
 - Ajout de la 4ème couleur du style "--filter-border-color"
 - .popular-cards .card-title {margin-bottom: 4px;} à 5px pour correspondre à la maquette
+- .popular-cards .card {margin-top: 33px;} à 30px pour correspondre à la maquette
+- .card-subtitle font-size ajoutée à 14px pour correspondre à la maquette
