@@ -22,7 +22,10 @@ body {
 }
 
 section {
-    margin: 35px 0;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .main-container {
@@ -118,7 +121,7 @@ fieldset {
 .search-bar {
     display: flex;
     border-style: solid;
-    border-color: var(--filter-border-color);
+    border-color: var(--main-bg-color);
     border-width: 1px;
     border-radius: 15px;
 }
@@ -167,13 +170,16 @@ fieldset {
     font-weight: 700;
 }
 
-.filter {
+.grey-border {
     display: flex;
     align-items: center;
     border-style: solid;
     border-color: var(--filter-border-color);
     border-radius: 25px;
     border-width: 2px;
+}
+
+.filter {
     padding: 15px 19px;
     gap: 10px;
 }
@@ -195,12 +201,7 @@ fieldset {
 }
 
 .info-icon {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    border-style: solid;
-    border-color: var(--filter-border-color);
-    border-radius: 25px;
     border-width: 1px;
     width: 24px;
     height: 24px;
