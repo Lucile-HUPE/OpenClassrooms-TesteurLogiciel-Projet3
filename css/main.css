@@ -327,3 +327,40 @@ fieldset {
 .popular-cards .card-rating {
     margin-bottom: 5px;
 }
+
+/****** activities ***********/
+
+.activities {
+    padding: 0 30px;
+}
+
+.activities-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.activities-cards a {
+    /* Deduct gaps to calculate the width depending of the screen size */
+    width: calc((100% - (3*30px))/4);
+}
+
+.activities-cards .card {
+    /* Deduct the margin-top to fit in the container properly */
+    height: calc(100% - 30px);
+    flex-direction: column;
+    padding: 0;
+}
+
+.activities-cards .card-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.activities-cards img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 100%;
+}
