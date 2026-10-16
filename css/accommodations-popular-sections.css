@@ -1,0 +1,111 @@
+/****** Accommodations & Popular ***********/
+
+.accommodations-and-popular {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accommodations-and-popular section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.euro {
+    font-weight: bold;
+}
+
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/****** Accommodations ***********/
+
+.accommodations {
+    width: 65%;
+}
+
+.accommodations-cards .cards-group {
+    --accommodations-cards-gap: 30px;
+    --accommodations-cards-group-nb: 3;
+    display: flex;
+    align-items: stretch;
+    gap: var(--accommodations-cards-gap);
+}
+
+.accommodations-cards a {
+    flex-direction: column;
+    width: calc((100% - ((var(--accommodations-cards-group-nb) - 1) * var(--accommodations-cards-gap))) / var(--accommodations-cards-group-nb));
+}
+
+.accommodations-cards .card {
+    flex-direction: column;
+    height: calc(100% - var(--card-margin-top));
+    box-sizing: border-box;
+}
+
+.accommodations-cards .card-content {
+    padding-top: 9px;
+}
+
+.accommodations-cards img {
+    height: 114px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.accommodations-cards .card-subtitle {
+    margin: 8px 0;
+}
+
+.display-more-button {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+/****** Popular ***********/
+
+.popular {
+    width: 32%;
+}
+
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-icon {
+    font-size: 18px;
+}
+
+.popular-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.popular-cards .card-content {
+    width: 67%;
+    padding-right: 0;
+    padding-bottom: 5px;
+}
+
+.popular-cards .card-subtitle {
+    margin: 5px 0;
+}

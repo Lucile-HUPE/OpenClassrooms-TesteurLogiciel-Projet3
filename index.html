@@ -12,8 +12,11 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/medium-devices.css">
-    <link rel="stylesheet" href="./css/small-devices.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/search-section.css">
+    <link rel="stylesheet" href="./css/accommodations-popular-sections.css">
+    <link rel="stylesheet" href="./css/activities-section.css">
 </head>
 
 <body>
@@ -21,52 +24,49 @@
         <header>
             <img class="logo" src="./images/logo/Booki.png" alt="Logo Booki">
             <nav>
-                <!-- TODO : div change to li -->
                 <ul>
-                    <li class="nav-button"><a href="#accommodations">Hébergements</a></li>
-                    <li class="nav-button"><a href="#activities">Activités</a></li>
+                    <a class="nav-button" href="#accommodations"><li>Hébergements</li></a>
+                    <a class="nav-button" href="#activities"><li>Activités</li></a>
                 </ul>
             </nav>
         </header>
         <main>
             <section class="search-infos">
                 <form method="get" action="">
-                    <div>
+                    <div class="headline">
                         <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                         <p class="search-subtitle">En plein centre-ville ou en pleine nature</p>
                     </div>
                     <fieldset class="search-bar">
-                        <div class="search-icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
+                        <i class="search-bar-icon fa-solid fa-location-dot"></i>
                         <input type="text" name="search-text" id="search-text" placeholder="Marseille, France"
                             value="Marseille, France" minlength="1">
-                        <input class="search-button" type="submit" value="Rechercher">
+                        <input class="search-bar-button" type="submit" value="Rechercher">
                     </fieldset>
                     <fieldset class="filters">
-                        <h2>Filtres</h2>
-                        <div class="grey-border filter">
+                        <h2 class="section-subtitle">Filtres</h2>
+                        <div class="grey-border filter-toogle">
                             <i class="fa-solid fa-money-bill-wave"></i>
-                            <p>Économique</p>
+                            <p class="filter-name">Économique</p>
                         </div>
-                        <div class="grey-border filter">
+                        <div class="grey-border filter-toogle">
                             <i class="fa-solid fa-person"></i>
-                            <p>Familial</p>
+                            <p class="filter-name">Familial</p>
                         </div>
-                        <div class="grey-border filter">
+                        <div class="grey-border filter-toogle">
                             <i class="fa-solid fa-heart"></i>
-                            <p>Romantique</p>
+                            <p class="filter-name">Romantique</p>
                         </div>
-                        <div class="grey-border filter">
+                        <div class="grey-border filter-toogle">
                             <i class="fa-solid fa-fire"></i>
-                            <p>Nos pépites</p>
+                            <p class="filter-name">Nos pépites</p>
                         </div>
                     </fieldset>
-                    <div class="info-text">
+                    <div class="info">
                         <div class="grey-border info-icon">
                             <i class="fa-solid fa-info"></i>
                         </div>
-                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                        <p class="info-text">Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                 </form>
             </section>
@@ -201,13 +201,12 @@
                             </a>
                         </div>
                     </div>
-                    <p class="display-more">Afficher plus</p>
+                    <p class="section-subtitle display-more-button">Afficher plus</p>
                 </section>
                 <section class="popular">
                     <div class="popular-title">
                         <h2 class="section-title">Les plus populaires</h2>
-                        <!-- Price icon -->
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        <i class="popular-icon fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="popular-cards">
                         <a href="#">
@@ -329,18 +328,18 @@
         </main>
         <footer>
             <ul>
-                <h3>À propos</h3>
+                <h3 class="section-subtitle">À propos</h3>
                 <li><a href="#">Fonctionnement du site</a></li>
                 <li><a href="#">Conditions générales</a></li>
                 <li><a href="#">Données et confidentialité</a></li>
             </ul>
             <ul>
-                <h3>Nos hébergements</h3>
+                <h3 class="section-subtitle">Nos hébergements</h3>
                 <li><a href="#">Charte qualité</a></li>
                 <li><a href="#">Proposer votre hôtel</a></li>
             </ul>
             <ul>
-                <h3>Assistance</h3>
+                <h3 class="section-subtitle">Assistance</h3>
                 <li><a href="#">Centre d'aide</a></li>
                 <li><a href="#">Nous contacter</a></li>
             </ul>

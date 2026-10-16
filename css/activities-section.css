@@ -1,0 +1,31 @@
+/****** Activities ***********/
+
+.activities-cards {
+    --activities-cards-gap: 30px;
+    --activities-cards-nb: 4;
+    display: flex;
+    flex-direction: row;
+    gap: var(--activities-cards-gap);
+}
+
+.activities-cards a {
+    /* Deduct gaps to calculate the width depending of the screen size */
+    width: calc((100% - ((var(--activities-cards-nb) - 1) * var(--activities-cards-gap))) / var(--activities-cards-nb));
+}
+
+.activities-cards .card {
+    flex-direction: column;
+    padding: 0;
+    /* Deduct the margin-top to fit in the container properly */
+    height: calc(100% - var(--card-margin-top));
+}
+
+.activities-cards .card-title {
+    padding: 20px 19px;
+}
+
+.activities-cards img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 100%;
+}
